@@ -1,0 +1,82 @@
+body{
+    text-align: center;
+    margin-top: 10px;
+   
+}
+h1{
+    margin-top: 10px;
+}
+h4{
+    font-size: 16px;
+    font-weight: 200;
+}
+.weather-app{
+    border: 1px solid #dadde1;
+    max-width: 400px;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.weather-today{
+    color: yellow;
+    text-align: center;
+    font-size: 100px;
+  
+}
+.current-temp{
+    font-size: 40px;
+    padding: 0 30px;
+    color: black;
+    position: relative;
+    top: -20px;
+}
+
+.alert-warning{
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+   
+}
+.weather-predictions{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    
+    
+}
+.forecast{
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+.days{
+position: relative;
+text-align: left;
+
+}
+.temp{
+position: relative;
+text-align: left;
+
+}
+.hi-temps{
+    font-size: 16px;
+    font-weight: bold;
+}
+.units{
+    position: relative;
+    top: -15px;
+    font-size: 15px;
+    right: 10px;
+    
+}
+.weekly-predictions{
+    position: relative;
+    font-size: 10px;
+    top: -5px;
+    right: 5px;
+}
