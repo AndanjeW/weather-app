@@ -27,15 +27,20 @@ dateElement.innerHTML = dateFormat(currentTime);
 function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
+  document.querySelector("#description").innerHTML = response.data.weather[0].main;
 }
+
+function search(city){
+  let apiKey = "e569e71e164e7e0ec0fb7827f996e194";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showWeather);
+
+}
+
 function showCity(event) {
   event.preventDefault();
-  let apiKey = "e569e71e164e7e0ec0fb7827f996e194";
   let city = document.querySelector("#city-input").value;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
-
-  axios.get(apiUrl).then(showWeather);
+  search(city);
 }
 let searchForm = document.querySelector("#city-search");
 searchForm.addEventListener("submit", showCity);
@@ -57,3 +62,5 @@ function showDegreesFahrenheit(event) {
 
 let tempFahrenheit = document.querySelector("#fahrenheit-link");
 tempFahrenheit.addEventListener("click", showDegreesFahrenheit);
+
+search("Nairobi");
