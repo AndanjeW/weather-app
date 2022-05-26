@@ -15,170 +15,37 @@
 
 </head>
 <body>
-    <div class="container">
-        <div class="weather-app">
-        <form id="city-search">
-            <div class="row">
-                <div class="col">
-            <input type="text" id="city-input"
-            placeholder="Type city and country..."
-            class="form-control">
-        </div>
-            <div class="col-3">
-            <input type="submit"
-             value="search"
-             class="form-control btn btn-primary">
-
+   <div class="container">
+       <div class="weather-app-wrapper">
+           <div class="weather-app"> 
+              <h1>Nairobi</h1>
+              <h2>Thursday 05:25</h2>
+                <div class="row">
+                  <div class="col-6">
+                      <div class="temperature"> 
+                         <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="">
+                         <span>17°C</span>
+                      </div>
+                 </div>
+              </div>
+              <h3>It is Cloudy Today</h3>
+              <div class="weather-forecast"> weather forecast
+                  <div class="row">
+                      <div class="col-6">
+                          <div class="weather-forecast-day">
+                              Monday
+                          </div>
+                      </div>
+                      <div class="col-6">
+                        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="" width="38px">
+                         <span> 18°|14°</span>
+                    </div>
+                  </div>
+              </div>
             </div>
-            
-
-        </div>
-        </form>
-
-        <h1 id="city">
-        </h1>
-        <h4 id="date">
-            Monday 9:00am
-        </h4>
-
-        <div class="weather-today">
-            <i class="fa-solid fa-sun">
-            </i> 
-            <span class="current-temp" id="current-temp">
-                <span  id="temperature" ></span>
-                 <span class="units" id="units" >
-                      <a id="celsius-link" href="#" > °C|
-                           </a> 
-                     <a id="fahrenheit-link" href="#"> °F</a>    
-                    </span>
-                
-            </span>
-        </div>
-
-        <div class="alert alert-warning" 
-             role="alert" id="description">
-            
-        </div>
-           
-          
-<div 
-     class="weather-predictions">
-              
-    <div class="forecast">
-        Daily Forecast
-    </div>     
-                
-    
-       <div class="row">
-           <div class="col days">
-              <strong>
-                 <em>
-                   Day
-                 </em> 
-              </strong>
-               <div class="col">
-                   Monday
-            </div>
-            <div class="col">
-                   Tuesday
-            </div>
-            <div class="col">
-                   Wednesday
-            </div>
-            <div class="col">
-                   Thursday
-            </div>
-            <div class="col">
-                   Friday
-            </div>
-    </div>
-           
-        <div class="col temp">
-            <strong>
-                <em>
-                    Weather
-                </em> 
-            </strong>
-
-            <div class="col">
-                <i class="fa-solid fa-cloud-sun">
-                </i> 
-                <span class="hi-temps">
-                     25
-                  <span class="units weekly-predictions">
-                      °C
-                    </span>
-                </span> 
-                    /16 
-                    <span class="units weekly-predictions">
-                        °C
-                    </span>
-            </div>
-
-            <div class="col">
-                <i class="fa-solid fa-cloud"></i>
-               
-                <span class="hi-temps">
-                    28
-                    <span class="units weekly-predictions">
-                        °C
-                    </span>
-                </span>   
-                / 16
-                <span class="units weekly-predictions">
-                    °C</span>
-            </div>
-
-            <div class="col">
-                <i class="fa-solid fa-cloud-showers-heavy">
-                </i>
-                <span class="hi-temps">
-                    25
-                    <span class="units weekly-predictions">
-                        °C</span>
-                </span>  
-                / 16
-                <span class="units weekly-predictions">
-                    °C
-                </span>
-            </div>
-
-            <div class="col">
-                <i class="fa-solid fa-cloud-bolt">
-                </i>  
-                <span class="hi-temps">
-                    25
-                    <span class="units weekly-predictions"> 
-                        °C
-                    </span>
-                </span> 
-                 / 16
-                 <span class="units weekly-predictions"> 
-                     °C
-                    </span>
-            </div>
-
-            <div class="col">
-                <i class="fa-solid fa-cloud-sun-rain">
-                </i>
-                <span class="hi-temps">
-                    26
-                    <span class="units weekly-predictions"> 
-                        °C
-                    </span>
-                </span>    
-                 / 16
-                 <span class="units weekly-predictions"> 
-                     °C
-                    </span>
-            </div>
-        </div>
-          
+         <small id="by-line"> <a href="https://github.com/AndanjeW/vanilla-weather-app" target="_blank">open-source code,</a>  by Andanje Wobanda</small>
        </div>
-    </div>
-    </div>
-</div>
-<footer><a href="https://github.com/AndanjeW/weather-app" target="_blank">Open-source code,</a> by Andanje Wobanda</footer>
-<script src="src/index.js"></script>
+   </div>
+  <script src="src/index.js"></script>
 </body>
 </html>
