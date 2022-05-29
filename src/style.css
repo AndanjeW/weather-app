@@ -22,7 +22,6 @@ img{
 }
 .weather-app{
     border: 1px solid #dadde1;
-    max-width: 400px;
     padding: 15px;
     margin: 20px auto;
     border-radius: 10px;
@@ -31,6 +30,8 @@ h3{
     background: yellow;
     text-align: center;
     font-size: 16px;
+    padding: 5px;
+    margin: 20px;
   
 }
 ul{
@@ -45,6 +46,7 @@ ul{
     margin: 30px auto;
 
 }
+
 #current-temp{
     color: #212121;
     font-size: 64px;
@@ -74,8 +76,10 @@ ul{
      font-size: 13px;
  }
  .weather-forecast-temp img{
-     width: 42px;
-     height: 42px;
+     width: 50px;
+     height: 50px;
+     margin-right: 5px;
+    padding-top: 10px;
     
  }
  .weather-forecast-temp-min{

@@ -18,40 +18,51 @@
    <div class="container">
       <div class="weather-app-wrapper">
            <div class="weather-app"> 
-              <h1 id="city">Nairobi</h1>
-              <h2 id="date">Thursday 05:25</h2>
+                <form id="search-form" class="mb-3">
+                  <div class="row">
+                     <div class="col-9">
+                          <input
+                          type="search"
+                          placeholder="Type city..."
+                          class="form-control"
+                          id="city-input">
+                     </div>
+                     <div class="col-3">
+                         <input
+                         type="submit"
+                         value="search"
+                         class="btn btn-primary"
+                         id="search-input">
+                      </div>
+                  </div>
+               </form>
+
+              <h1 id="city"></h1>
+              <h2 id="date"></h2>
+
                 <div class="row">
                   <div class="col-9">
                       <div class="temperature"> 
-                         <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="">
+                        <img 
+                           src=""
+                           alt=""
+                           id="icon"
+                          >
                          <span id="current-temp">17</span>
                          <span class="units">°C</span>
                       </div>
                  </div>
                  <div class="col-sm-3"> 
-                  <ul>
-                    <li>Humidity:<span id="humidity"></span>%</li>
-                    <li>Wind: <span id="wind"></span> km/h</li>
-                   </ul>
-              </div>
-              </div>
+                     <ul>
+                      <li>Humidity:<span id="humidity"></span>%</li>
+                      <li>Wind: <span id="wind"></span> km/h</li>
+                       </ul>
+                     </div>
+                </div>
               <h3 id="weather-condition">It is Cloudy Today</h3>
-              <div class="weather-forecast"> <strong>  Weather Forecast</strong>
-                  <div class="row">
-                      <div class="col-6">
-                          <div class="weather-forecast-day">
-                              Monday
-                          </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="weather-forecast-temp">
-                        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="" width="38px">
-                         <span class="weather-forecast-temp-max"> 18°</span>
-                         <span class="weather-forecast-temp-min">14°</span>
-
-                        </div>
-                    </div>
-                  </div>
+              
+              <div class="weather-forecast" id="forecast"> <strong>  Weather Forecast</strong>
+                  
               </div>
             </div>
          <small id="by-line"> <a href="https://github.com/AndanjeW/vanilla-weather-app" target="_blank">open-source code,</a>  by Andanje Wobanda</small>
