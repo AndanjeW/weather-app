@@ -1,8 +1,14 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    
+}
+.btn-branding{
+    background: #c18054;
+    color: white;
+    outline: #c18054;
 }
 h1{
-    color: #878787;
+    color: #212121;
     font-size: 24px;
     font-weight: 100;
     line-height: 28px;
@@ -11,7 +17,17 @@ h2{
     font-size: 16px;
     font-weight: 100;
     line-height: 1.5;
-    color: #878787;
+    color: #fff;
+}
+
+h3{
+    background: #c18054;
+    opacity: 0.7;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    margin: 20px;
 }
 img{
     float: left;
@@ -20,19 +36,6 @@ img{
     margin: -20px;
    
 }
-.weather-app{
-    border: 1px solid #dadde1;
-    padding: 15px;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-h3{
-    background: yellow;
-    text-align: center;
-    font-size: 16px;
-    padding: 5px;
-    margin: 20px;
-}
 #weather-condition:first-letter{
     text-transform: capitalize
   }
@@ -40,12 +43,21 @@ ul{
     list-style: none;
     margin: 0;
     padding: 0;
-    color: #878787;
+    color: #212121; 
     font-size: 13px;
+}
+.weather-app{
+    border: 1px solid #dadde1;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-image: url(/images/sand\ dunes.jpg);
+    background-size: cover;
 }
 .weather-app-wrapper{
     max-width: 600px;
     margin: 30px auto;
+   
 
 }
 
@@ -72,10 +84,13 @@ ul{
  .weather-forecast-day{
     font-size: 16px;
     opacity: 0.8;
+    color: #fff;
+    font-weight: 500;
 
  }
  .weather-forecast-temp{
      font-size: 13px;
+     color: #fff;
  }
  .weather-forecast-temp img{
      width: 50px;
@@ -86,4 +101,5 @@ ul{
  }
  .weather-forecast-temp-min{
 opacity: 0.5;
+color: #fff;
  }
